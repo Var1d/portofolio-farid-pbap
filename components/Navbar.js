@@ -58,8 +58,16 @@ export default function Navbar() {
 
         {/* Right side */}
         <div style={styles.right}>
-          <button onClick={toggleTheme} style={styles.themeBtn} title="Toggle theme">
-            <span style={{ fontSize: '16px' }}>{theme === 'dark' ? '◈' : '◉'}</span>
+          <button
+            onClick={toggleTheme}
+            style={{
+              ...styles.themeBtn,
+              borderColor: theme === 'neon' ? '#00ff41' : 'rgba(0,245,255,0.15)',
+              boxShadow: theme === 'neon' ? '0 0 12px rgba(0,255,65,0.5)' : 'none',
+            }}
+            title={`Mode: ${theme === 'dark' ? 'DARK' : 'NEON'} — klik untuk ganti`}
+          >
+            <span style={{ fontSize: '15px' }}>{theme === 'dark' ? '🌙' : '💚'}</span>
           </button>
           <a
             href="https://github.com/Var1d"

@@ -10,8 +10,8 @@ Portofolio personal seorang VR Game Developer(Aamiin), dibangun dengan **Next.js
 ## Cara Menjalankan
 
 ```bash
-unzip portfolio-farid.zip
-cd portfolio-farid
+unzip portofolio-farid-pbap.zip
+cd portofolio-farid-pbap
 npm install
 npm run dev
 
